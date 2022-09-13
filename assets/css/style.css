@@ -19,7 +19,27 @@ body {
 h1 {
     font-size: 5rem;
     text-align: center;
+    margin-top: 50px;
 }
+
+h2 {
+    margin: 20px 0;
+}
+
+h3 {
+    margin: 40px 0 20px 0;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 30px;
+}
+
 
 header {
     background-color: #eef6ea;
@@ -82,4 +102,69 @@ main section:nth-child(2) article p:nth-child(3) {
     text-align: center;
     font-size: 1.6rem;
     line-height: 25px;
+    margin-bottom: 50px;
+}
+
+main section:nth-child(2) article h2 {
+    color: #757d83;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+main section:nth-child(2) article > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+    gap: 25px;
+    max-width: 88vw;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+main section:nth-child(2) article div div {
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+main section:nth-child(2) article div div img {
+    border-radius: 100%;
+    border: 5px solid #eef6ea;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+main section:nth-child(3) {
+    background-color: #eef6ea;
+}
+
+main section:nth-child(4) article > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 10px;
+    max-width: 88vw;
+}
+
+main section:nth-child(4) article div div:first-child {
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+main section:nth-child(4) article div div:first-child img {
+    width: 80%;
+}
+
+main section:nth-child(4) article div div:last-child {
+    width: 830px;
+    text-align: justify;
 }
