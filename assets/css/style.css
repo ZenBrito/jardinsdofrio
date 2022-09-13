@@ -19,7 +19,6 @@ body {
 h1 {
     font-size: 5rem;
     text-align: center;
-    margin-top: 50px;
 }
 
 h2 {
@@ -143,7 +142,7 @@ main section:nth-child(3) {
     background-color: #eef6ea;
 }
 
-main section:nth-child(4) article > div {
+main section:nth-child(4) article:first-child > div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -153,18 +152,43 @@ main section:nth-child(4) article > div {
     max-width: 88vw;
 }
 
-main section:nth-child(4) article div div:first-child {
+main section:nth-child(4) article:first-child div div:first-child {
     width: 300px;
     padding: 10px;
     display: flex;
     justify-content: center;
 }
 
-main section:nth-child(4) article div div:first-child img {
+main section:nth-child(4) article:first-child div div:first-child img {
     width: 80%;
 }
 
-main section:nth-child(4) article div div:last-child {
+main section:nth-child(4) article:first-child div div:last-child {
     width: 830px;
     text-align: justify;
+}
+
+main section:nth-child(4) article:nth-child(2) > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+    gap: 10px;
+    /* background-color: coral; */
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+main section:nth-child(4) article:nth-child(2) div div {
+    /* background-color: burlywood; */
+    border-radius: 5px;
+    border: 1px solid #dcddda;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main section:nth-child(4) article:nth-child(2) div div img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
 }
